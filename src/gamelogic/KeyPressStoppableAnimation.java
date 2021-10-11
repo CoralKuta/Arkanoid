@@ -48,6 +48,4 @@ public class KeyPressStoppableAnimation implements Animation {
     public boolean shouldStop() {
         return this.stop;
     }
-
-
 }

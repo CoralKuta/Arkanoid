@@ -4,10 +4,8 @@ package game;
 
 import biuoop.KeyboardSensor;
 import gamelevels.LevelInformation;
-import gamelogic.AnimationRunner;
-import gamelogic.KeyPressStoppableAnimation;
-import gamelogic.GameOver;
-import gamelogic.YouWin;
+import gamelogic.*;
+
 import java.util.List;
 
 
@@ -37,6 +35,11 @@ public class GameFlow {
         this.keyboard = keyboard;
         this.score = new Counter();
         this.lives = new Counter(LIVES);
+    }
+
+    public void runGame() {
+        this.runner.run(new KeyPressStoppableAnimation(this.keyboard, new MenuAnimation()));
+
     }
 
     /**

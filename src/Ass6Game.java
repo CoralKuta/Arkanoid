@@ -18,7 +18,7 @@ public class Ass6Game {
 
     /**
      * Run the game.
-     * @param args - arguments from the commend line.
+     * @param args - arguments from the command line.
      */
     public static void main(String[] args) {
 
@@ -50,14 +50,15 @@ public class Ass6Game {
 
         //If no level enters to the list, the arguments were not valid - we run the whole game.
         if (levels.isEmpty()) {
-            levels.add(new DirectHit());
-            levels.add(new WideEasy());
+//            levels.add(new DirectHit());
+//            levels.add(new WideEasy());
             levels.add(new Green3());
-            levels.add(new FinalFour());
+//            levels.add(new FinalFour());
         }
 
         //Creating and running a new game with all levels.
         GameFlow gameFlow = new GameFlow(runner, runner.getGui().getKeyboardSensor());
+        gameFlow.runGame();
         gameFlow.runLevels(levels);
     }
 }

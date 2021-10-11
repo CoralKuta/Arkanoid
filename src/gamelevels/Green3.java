@@ -42,7 +42,7 @@ public class Green3 implements LevelInformation {
     public List<Velocity> initialBallVelocities() {
         ArrayList<Velocity> ballVelocities = new ArrayList<>();
 
-        //Creating to balls in opposite directions.
+        //Creating two balls in opposite directions.
         Velocity velocity1 = Velocity.fromAngleAndSpeed(405, 5);
         Velocity velocity2 = Velocity.fromAngleAndSpeed(315, 5);
         ballVelocities.add(velocity1);
