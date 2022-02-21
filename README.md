@@ -1,5 +1,5 @@
 # Arkanoid
-## Java
+## About
 
 An Arkanoid game that was a part of an OOP course that I had during the first year of my bachelor degree.
 This project was made in Java language, following OOP principles:
